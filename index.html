@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokeDexPro</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">PokeDexPro</a>
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Pokémon Search</h1>
+      <div class="field">
+        <label class="label">Search for a Pokémon</label>
+        <div class="control">
+          <input id="pokemon-search" class="input" type="text" placeholder="Enter Pokémon name">
+        </div>
+        <div class="control mt-2">
+          <button id="search-button" class="button is-primary">Search</button>
+        </div>
+      </div>
+      <div id="pokemon-result" class="box">
+        <!-- Pokémon info will be displayed here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="pokemon-modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="box">
+        <p id="modal-content">Modal Content</p>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
